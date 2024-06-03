@@ -4,7 +4,7 @@ html, body{
 }
 
 body {
-    height: 100vh;
+    height: 90vh;
 }
 
 .vertical-container {
@@ -21,4 +21,11 @@ body {
 .box {
     flex-grow: 1;
     border: 2px solid black;
+}
+
+#create-grid {
+    height: 50px;
+    width: 300px;
+    margin: 0 auto;
+    display: block;
 }

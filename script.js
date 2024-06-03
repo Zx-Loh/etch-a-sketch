@@ -1,6 +1,5 @@
 const mainContainer = document.querySelector(".vertical-container")
-const gridDefault = 16
-
+const button = document.querySelector("button")
 
 
 function createGrid(x) {
@@ -25,4 +24,21 @@ function createGrid(x) {
 }
 
 
-createGrid(gridDefault)
+
+function refreshGrid() {
+    while (mainContainer.firstChild) {
+        mainContainer.removeChild(mainContainer.lastChild);
+    }
+
+    let gridDimension = 101
+    while (gridDimension>100) {
+        gridDimension = prompt("Enter a value <100 for the size of the grid")
+    }
+
+    createGrid(gridDimension)
+}
+
+
+
+
+createGrid(16)
